@@ -64,7 +64,7 @@ def register(payload:Register,db:Session=Depends(get_db)):
     if not field:raise HTTPException(409,'Required study field is missing.')
     user=User(name=payload.full_name,email=email,password_hash=hash_password(payload.password),role=UserRole.STUDENT,is_active=True,is_email_verified=False,approval_status=UserApprovalStatus.APPROVED)
     db.add(user);db.flush()
-    student=Student(full_name=payload.full_name,email=email,user_id=user.id,university_id=university.id,field_id=field.id,course=record['programme'],raw_cgpa=record['cgpa'],gpa_scale=5.0,credits_earned=18,is_self_registered=True,approval_status=ApprovalStatus.APPROVED,is_publicly_visible=True,bio=f'Fictional classroom study profile {participant}. No real academic records.',avatar_url='/study-avatar.svg',portfolio_url='https://example.com/')
+    student=Student(full_name=payload.full_name,email=email,user_id=user.id,university_id=university.id,field_id=field.id,course=record['programme'],raw_cgpa=record['cgpa'],gpa_scale=5.0,credits_earned=18,is_self_registered=True,approval_status=ApprovalStatus.APPROVED,is_publicly_visible=True,bio=f'Fictional classroom study profile {participant}. No real academic records.',avatar_url='/study-avatar.svg',portfolio_url=None)
     db.add(student);db.flush();evaluate_student(db,student)
     db.add(ClassroomIdentity(user_id=user.id,full_name=payload.full_name,student_identifier=payload.student_identifier))
     db.add(ClassroomEnrollment(user_id=user.id,participant_id=participant,template_id=record['template_id'],academic_record=record))

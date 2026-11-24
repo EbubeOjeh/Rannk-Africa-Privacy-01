@@ -86,6 +86,14 @@ export function StudentRow({ student, index = 0 }) {
           <span className="text-cream/40 text-xs"> /100</span>
         </div>
       </div>
+      <div className="px-4 sm:px-6 pb-3">
+  <Link
+    to={`/students/${student.id}`}
+    className="btn-ghost text-sm"
+  >
+    View Profile
+  </Link>
+</div>
       {(student.bio || student.portfolio_url) && <div className="px-4 sm:px-6 pb-3 space-y-2 text-sm">
         {student.bio && <p className="text-cream/70 whitespace-pre-wrap break-words">{student.bio}</p>}
         {student.portfolio_url && /^https?:\/\//i.test(student.portfolio_url) && <a href={student.portfolio_url} target="_blank" rel="noopener noreferrer" className="text-gold-300 underline break-all">View portfolio</a>}
