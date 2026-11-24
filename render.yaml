@@ -1,0 +1,26 @@
+# Creates paid resources. Review Render's current charges before applying.
+services:
+  - type: web
+    name: rankafrica-privacy-demo
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    disk:
+      name: rankafrica-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEMO_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        value: sqlite:////var/data/rankafrica.db
+      - key: UPLOAD_DIR
+        value: /var/data/uploads
+      - key: AI_ENABLED
+        value: "false"
+      - key: AUTO_SEED
+        value: "true"
+      - key: INIT_DB_ON_STARTUP
+        value: "true"

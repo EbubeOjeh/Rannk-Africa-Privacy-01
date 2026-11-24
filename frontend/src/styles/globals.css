@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0a0a0b;
+  /* Near-black base with a restrained warm glow to match the prototype
+   * (no heavy/futuristic gradients, per the design direction). */
+  background-image:
+    radial-gradient(circle at 50% -10%, rgba(226, 168, 40, 0.05), transparent 45%),
+    radial-gradient(circle at 100% 0%, rgba(226, 168, 40, 0.04), transparent 50%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply bg-ink-850/85 border border-cream/10 rounded-2xl backdrop-blur-sm shadow-card;
+  }
+  /* min-h on mobile only: keeps every button a comfortable ~44px touch target
+   * on a phone (several call sites use `text-xs`/`h-7`, which render ~28px),
+   * while leaving desktop density exactly as it was. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] sm:min-h-0 sm:py-2 rounded-lg text-sm font-semibold transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400/60 disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-gold-400 text-ink-text hover:bg-gold-300 shadow-glow;
+  }
+  .btn-ghost {
+    @apply btn bg-cream/5 text-white hover:bg-cream/10 border border-cream/5;
+  }
+  .btn-outline {
+    @apply btn border border-cream/15 text-white hover:bg-cream/5;
+  }
+  .field-label {
+    @apply text-xs font-medium tracking-wide text-cream/80 mb-1.5 block;
+  }
+  /* text-base on mobile is deliberate: iOS Safari zooms the viewport whenever a
+   * focused field is under 16px, which was happening on every filter, search
+   * box and registration input. */
+  .input {
+    @apply w-full bg-ink-900 border border-cream/10 rounded-lg px-3 py-2.5 sm:py-2 text-base sm:text-sm text-white placeholder:text-cream/30 focus:outline-none focus:border-gold-400/60 focus:ring-2 focus:ring-gold-400/20 transition-all;
+  }
+  .tag {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-md;
+  }
+  /* NB: do NOT use the class name `table-row` here — Tailwind already
+   * defines `.table-row { display: table-row }` as a utility and it would
+   * silently override our grid display. Same logic applies to other
+   * Tailwind display utilities; `data-row` / `data-head` are safe. */
+  .data-row {
+    @apply grid grid-cols-12 items-center gap-3 px-4 py-3 border-b border-cream/5 hover:bg-cream/[0.03] transition-colors;
+  }
+  .data-head {
+    @apply grid grid-cols-12 items-center gap-3 px-4 py-3 border-b border-cream/10 text-[11px] uppercase tracking-wider text-cream/50;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-semibold rounded-full;
+  }
+  .pill-success {
+    @apply pill bg-emerald-500/15 text-emerald-300;
+  }
+  .pill-pending {
+    @apply pill bg-amber-500/15 text-amber-200;
+  }
+  .pill-danger {
+    @apply pill bg-rose-500/15 text-rose-300;
+  }
+}
+
+/* CSS grid items default to min-width:auto which lets long content overflow
+ * its column and push other cells onto a new row. Force min-width:0 on every
+ * grid cell so truncate works and rows stay on a single line. */
+.data-row > *,
+.data-head > * {
+  min-width: 0;
+}
+
+/* The 12-column data tables can't usefully shrink below ~44rem. Give rows a
+ * floor width; their card wrapper carries `overflow-x-auto`, so on phones the
+ * whole table scrolls sideways as one unit instead of crushing the columns. */
+.data-row,
+.data-head {
+  min-width: 44rem;
+}
+
+@layer utilities {
+  .text-shimmer {
+    background: linear-gradient(110deg, #fff 0%, #C47C2B 50%, #fff 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(249, 245, 238, 0.08);
+    border-radius: 6px;
+  }
+}

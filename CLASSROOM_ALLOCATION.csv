@@ -1,0 +1,11 @@
+Template,Profile,Field,Programme,Fictional school,CGPA,Scale
+P01,Study Student 01,Technology,Computer Science,Demo Coast University,4.5,5
+P02,Study Student 02,Technology,Computer Science,Demo Hills University,4.0,5
+P03,Study Student 03,Technology,Computer Science,Demo River University,3.5,5
+P04,Study Student 04,Technology,Computer Science,Demo Coast University,2.83,5
+P05,Study Student 05,Engineering,Mechanical Engineering,Demo Hills University,4.67,5
+P06,Study Student 06,Engineering,Mechanical Engineering,Demo River University,3.67,5
+P07,Study Student 07,Engineering,Mechanical Engineering,Demo Coast University,2.83,5
+P08,Study Student 08,Law,Law,Demo Hills University,4.5,5
+P09,Study Student 09,Law,Law,Demo River University,3.5,5
+P10,Study Student 10,Law,Law,Demo Coast University,2.33,5

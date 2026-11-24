@@ -1,0 +1,6 @@
+[32m2026-11-14 19:31:15[0m | [1mINFO    [0m | [36mapp.db.init_db[0m:[36minit_db[0m - [1mDatabase is empty + AUTO_SEED=true -> seeding demo data.[0m
+[32m2026-11-14 19:31:16[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mRankAfrica started in development mode[0m
+[32m2026-11-14 19:31:16[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mShutting down.[0m
+[32m2026-11-14 19:31:16[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mRankAfrica started in development mode[0m
+[32m2026-11-14 19:31:17[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mShutting down.[0m
+PASS: startup and controlled seed; root and React deep-link HTML; health; unknown API 404; real sign-in; consent, application and uploaded bytes persist across application lifecycle restart. In-process TestClient only; not Docker/remote hosting evidence.

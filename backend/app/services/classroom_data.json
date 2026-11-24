@@ -1,0 +1,112 @@
+[
+  {
+    "profile_name": "Study Student 01",
+    "field": "Technology",
+    "programme": "Computer Science",
+    "fictional_school": "Demo Coast University",
+    "cgpa": 4.5,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P01_Synthetic_Transcript.pdf",
+    "template_id": "P01"
+  },
+  {
+    "profile_name": "Study Student 02",
+    "field": "Technology",
+    "programme": "Computer Science",
+    "fictional_school": "Demo Hills University",
+    "cgpa": 4.0,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P02_Synthetic_Transcript.pdf",
+    "template_id": "P02"
+  },
+  {
+    "profile_name": "Study Student 03",
+    "field": "Technology",
+    "programme": "Computer Science",
+    "fictional_school": "Demo River University",
+    "cgpa": 3.5,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P03_Synthetic_Transcript.pdf",
+    "template_id": "P03"
+  },
+  {
+    "profile_name": "Study Student 04",
+    "field": "Technology",
+    "programme": "Computer Science",
+    "fictional_school": "Demo Coast University",
+    "cgpa": 2.83,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P04_Synthetic_Transcript.pdf",
+    "template_id": "P04"
+  },
+  {
+    "profile_name": "Study Student 05",
+    "field": "Engineering",
+    "programme": "Mechanical Engineering",
+    "fictional_school": "Demo Hills University",
+    "cgpa": 4.67,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P05_Synthetic_Transcript.pdf",
+    "template_id": "P05"
+  },
+  {
+    "profile_name": "Study Student 06",
+    "field": "Engineering",
+    "programme": "Mechanical Engineering",
+    "fictional_school": "Demo River University",
+    "cgpa": 3.67,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P06_Synthetic_Transcript.pdf",
+    "template_id": "P06"
+  },
+  {
+    "profile_name": "Study Student 07",
+    "field": "Engineering",
+    "programme": "Mechanical Engineering",
+    "fictional_school": "Demo Coast University",
+    "cgpa": 2.83,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P07_Synthetic_Transcript.pdf",
+    "template_id": "P07"
+  },
+  {
+    "profile_name": "Study Student 08",
+    "field": "Law",
+    "programme": "Law",
+    "fictional_school": "Demo Hills University",
+    "cgpa": 4.5,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P08_Synthetic_Transcript.pdf",
+    "template_id": "P08"
+  },
+  {
+    "profile_name": "Study Student 09",
+    "field": "Law",
+    "programme": "Law",
+    "fictional_school": "Demo River University",
+    "cgpa": 3.5,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P09_Synthetic_Transcript.pdf",
+    "template_id": "P09"
+  },
+  {
+    "profile_name": "Study Student 10",
+    "field": "Law",
+    "programme": "Law",
+    "fictional_school": "Demo Coast University",
+    "cgpa": 2.33,
+    "gpa_scale": 5.0,
+    "credits": 18,
+    "transcript_file": "transcripts/P10_Synthetic_Transcript.pdf",
+    "template_id": "P10"
+  }
+]

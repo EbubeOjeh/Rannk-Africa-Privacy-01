@@ -1,0 +1,12 @@
+TEN EDITABLE FICTIONAL TRANSCRIPTS WITH BLANK NAMES
+
+Open each .docx in Microsoft Word. Replace the blank Student name line if desired. Keep the template number, fictional school, grades and CGPA unchanged so they match the classroom system. Every document remains clearly labelled fictional and not an official transcript.
+
+P01-P04: Technology / Computer Science
+P05-P07: Engineering / Mechanical Engineering
+P08-P10: Law
+
+CURRENT SYSTEM BEHAVIOR
+The current corrected classroom version assigns synthetic academic records during registration and blocks transcript uploads for classroom accounts, including Word and PDF uploads. These files are supporting documents to edit or send, not files the participant must upload. Ask each participant to select the corresponding P01-P10 template at registration. The account-specific synthetic PDF can be downloaded from Study tasks.
+
+Adding a name to a Word file does not update the account name. It is not necessary to use real names to evaluate privacy controls; a chosen study alias also works. No system changes are included in this document pack.

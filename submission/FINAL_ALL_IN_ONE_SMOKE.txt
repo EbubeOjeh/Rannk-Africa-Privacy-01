@@ -1,0 +1,5 @@
+[32m2026-11-23 23:18:45[0m | [1mINFO    [0m | [36mapp.db.init_db[0m:[36minit_db[0m - [1mDatabase is empty + AUTO_SEED=true -> seeding demo data.[0m
+[32m2026-11-23 23:18:45[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mRankAfrica started in development mode[0m
+[32m2026-11-23 23:18:45[0m | [34m[1mDEBUG   [0m | [36mapp.services.evaluation_engine.engine[0m:[36mevaluate_student[0m - [34m[1mEvaluated student id=5b464b28-8e33-451f-bbe6-b7cac6db7537 model=project acad=38.5 proj=0.0 ach=0.0 profile=0.0 final=38.5[0m
+PASS: required name/ID registration, private student ID, administrator identity listing, logout identity prefill; extracted complete source starts clean, registers without invites, assigns matching transcript, protects chosen photo, exposes photo/biography only with consent, withdraws sharing, saves identified exit review without SMTP, and exports all answers to administrator.
+[32m2026-11-23 23:18:46[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mShutting down.[0m

@@ -1,0 +1,6 @@
+[32m2026-11-23 22:36:15[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mRankAfrica started in development mode[0m
+PASS: existing SQLite database upgrades without deleting accounts; exit review saves without SMTP and reports not_configured.
+[32m2026-11-23 22:36:15[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mShutting down.[0m
+[32m2026-11-23 22:36:15[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mRankAfrica started in development mode[0m
+PASS: new table and saved exit review persist across restart; previous student count unchanged.
+[32m2026-11-23 22:36:15[0m | [1mINFO    [0m | [36mapp.main[0m:[36mlifespan[0m - [1mShutting down.[0m

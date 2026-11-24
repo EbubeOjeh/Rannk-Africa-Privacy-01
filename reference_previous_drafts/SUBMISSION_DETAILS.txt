@@ -1,0 +1,12 @@
+Project: Rank Africa Usable Privacy and Privacy by Default
+Team: Ojeh Ebube and Naomi Pristyle
+Course: CIS*6550 Privacy, Compliance and Human Cyber
+Source version: privacy-assessment-v1
+Live URL: NOT DEPLOYED — replace only after successful hosting and independent verification.
+Availability window and timezone: TO BE COMPLETED BY THE TEAM
+Credential delivery method: TO BE COMPLETED; provide privately, not in a public repository.
+Local instructions: ../README.md
+Hosting instructions: ../HOSTING_AND_SUBMISSION.md
+Team walkthrough: NOT YET RECORDED
+Hosted restart/persistence checks: NOT RUN
+Browser visual and keyboard checks: NOT RUN in the authoring environment

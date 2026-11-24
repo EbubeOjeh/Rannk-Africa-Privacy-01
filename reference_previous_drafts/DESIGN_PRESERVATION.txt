@@ -1,0 +1,3 @@
+frontend/src/components/Logo.jsx: UNCHANGED
+frontend/src/styles/globals.css: UNCHANGED
+Brand assets retained: True

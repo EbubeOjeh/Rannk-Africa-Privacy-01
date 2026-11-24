@@ -1,0 +1,4 @@
+ID,Severity,Version,Observed issue,Correction,Retest evidence,Status
+D01,Low,privacy-assessment-v1,Test initially expected schema rejection before role denial,Corrected assertion to accept the actual role denial and added separate student schema case,API_TEST_RESULTS.txt,Resolved
+D02,Verification limit,privacy-assessment-v1,Cloud browser could not connect to local preview,Complete team visual and keyboard walkthrough on local machine,MANUAL_TEST_REGISTER.csv,Open
+D03,Verification limit,privacy-assessment-v1,No external Docker host deployed,Deploy using hosting instructions and record restart evidence,SUBMISSION_DETAILS.txt,Open

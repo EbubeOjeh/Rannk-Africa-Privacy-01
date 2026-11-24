@@ -1,0 +1,11 @@
+{
+  "source_version": "privacy-assessment-v1",
+  "date": "2026-11-14",
+  "os": "Linux",
+  "python": "3.12.14",
+  "node": "24.22.1",
+  "api_tests": 21,
+  "browser_visual_keyboard": "not run",
+  "docker_build": "not run",
+  "public_deployment": "not deployed"
+}

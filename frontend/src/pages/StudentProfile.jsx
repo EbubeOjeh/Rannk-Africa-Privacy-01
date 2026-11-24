@@ -1,0 +1,9 @@
+import AuthorizedImage from '@/components/AuthorizedImage';
+import { useEffect,useState } from 'react';
+import { Link,useParams } from 'react-router-dom';
+import { api } from '@/services/api';
+export default function StudentProfile(){
+ const {id}=useParams();const [s,setS]=useState(null),[message,setMessage]=useState('Loading profile…');
+ useEffect(()=>{setS(null);api.get(`/students/${id}/full`).then(r=>setS(r.data)).catch(()=>setMessage('This profile is not available for your audience.'));},[id]);
+ return <div className="container-page py-12"><Link className="btn-ghost mb-6" to="/rankings">Back to rankings</Link>{!s?<p role="status">{message}</p>:<div className="card p-6 grid md:grid-cols-3 gap-6"><div className="md:col-span-2 space-y-4"><div className="flex items-center gap-5">{s.avatar_url?<AuthorizedImage src={s.avatar_url} className="w-20 h-20 rounded-full" alt="Shared profile"/>:<div className="w-20 h-20 rounded-full bg-gold-400/10 grid place-items-center text-gold-300 text-2xl">{s.full_name.slice(0,1)}</div>}<div><p className="text-xs text-cream/50 uppercase">Student profile</p><h1 className="font-display text-3xl font-bold">{s.full_name}</h1><p className="text-cream/70 mt-2">{s.university_name} · {s.field_name}</p></div></div>{s.bio&&<section><h2 className="font-bold mb-2">Biography</h2><p className="text-cream/75 whitespace-pre-wrap">{s.bio}</p></section>}{s.portfolio_url&&<a className="text-gold-300 underline" target="_blank" rel="noreferrer" href={s.portfolio_url}>View portfolio</a>}<p className="text-sm text-cream/50">This profile shows the core fields and optional information authorized for your audience. Scores are illustrative.</p></div><aside className="bg-gold-400/5 rounded-xl p-6"><p className="text-sm text-cream/60">Illustrative score</p><p className="text-4xl font-display font-bold text-gold-300 mt-3">{s.final_score}<span className="text-lg text-cream/50"> /100</span></p></aside></div>}</div>;
+}

@@ -1,0 +1,14 @@
+# Keep the serverless bundle small and free of local-only artifacts.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.db
+*.db-journal
+*.pre-v2-backup
+sample_data/
+uploads/
+alembic/versions/*.py
+.env
+.env.*
+README.md
